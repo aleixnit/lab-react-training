@@ -1,5 +1,8 @@
 import './App.css';
 import Idcard from './components/Idcard';
+import Random from './components/Random';
+import Greetings from './components/Greetings';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
@@ -22,9 +25,15 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       <h1>Greetings</h1>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">Français</Greetings>
       <h1>Random</h1>
-      
-
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>
+      <h1>Box Color</h1>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+      <h1>CreditCard</h1>
     </div>
   );
 }

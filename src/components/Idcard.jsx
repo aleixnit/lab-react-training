@@ -25,7 +25,7 @@ export default function Idcard(props) {
             <span style={{ fontWeight: 'bold' }}>Gender:</span> {props.gender}
           </p>
           <p>
-            <span style={{ fontWeight: 'bold' }}>Height:</span> {props.height}
+            <span style={{ fontWeight: 'bold' }}>Height:</span> {(props.height/100) + "m"}
           </p>
           <p>
             <span style={{ fontWeight: 'bold' }}>Birth: </span> {fullDate}
