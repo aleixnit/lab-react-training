@@ -3,6 +3,7 @@ import Idcard from './components/Idcard';
 import Random from './components/Random';
 import Greetings from './components/Greetings';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
       <h1>CreditCard</h1>
+      <CreditCard />
+      <CreditCard />
+      <CreditCard />
+
     </div>
   );
 }
