@@ -3,7 +3,7 @@ import './Greetings.css'
 export default function BoxColor(props) {
     let colorRGB = `rgb(${props.r}, ${props.g}, ${props.b})`;
 
-
+/**FUNCION PARA CONVERTIR EL COLOR RGB EN HEX */
     function ColorToHex(color) {
         let hexadecimal = color.toString(16);
         return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
@@ -14,13 +14,12 @@ export default function BoxColor(props) {
         return "#" + ColorToHex(props.r) + ColorToHex(props.g) + ColorToHex(props.b);
       }
 
-      const hexValue = ConvertRGBtoHex(props.r, props.g, props.b);
-    //   console.log(ConvertRGBtoHex(255, 100, 200));
+      const hexColor = ConvertRGBtoHex(props.r, props.g, props.b);
 
  return (
-    <div style={{backgroundColor: colorRGB, display: 'flex', flexDirection: 'column'}} className="textBoxColor">
+    <div style={{backgroundColor: colorRGB, display: 'flex', flexDirection: 'column', color: `${hexColor === '#ff0000' ? 'white' : 'black'}`}} className="textBoxColor">
         <p style={{margin: '0'}}>rgb({props.r}, {props.g}, {props.b})</p>
-        <p style={{margin: '0'}}>{hexValue}</p>
+        <p style={{margin: '0'}}>{hexColor}</p>
     </div>
  )
 }
