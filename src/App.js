@@ -6,6 +6,8 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -96,6 +98,11 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton/>
+      <LikeButton/>
+      <h1>Iteration 13: List and keys</h1>
+      <Facebook/>
+
     </div>
   );
 }
