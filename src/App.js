@@ -5,13 +5,16 @@ import Greetings from './components/Greetings';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
-import DriverCard from './components/DriverCard'
+import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import Facebook from './components/Facebook';
+import Dice from './components/Dice';
 
 function App() {
   return (
     <div className="App">
+      <h1>Dice</h1>
+      <Dice />
       <h1>ID Card</h1>
       <Idcard
         lastName="Doe"
@@ -98,11 +101,10 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-      <LikeButton/>
-      <LikeButton/>
+      <LikeButton />
+      <LikeButton />
       <h1>Iteration 13: List and keys</h1>
-      <Facebook/>
-
+      <Facebook />
     </div>
   );
 }
