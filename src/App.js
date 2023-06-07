@@ -9,10 +9,13 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import Facebook from './components/Facebook';
 import Dice from './components/Dice';
+import RgbColorPicker from './components/RgbColorPicker';
 
 function App() {
   return (
     <div className="App">
+    <h1>RGBColorPicker</h1>
+      <RgbColorPicker style={{display:'flex', flexDirection: 'column', gap: '5px'}} />
       <h1>Dice</h1>
       <Dice />
       <h1>ID Card</h1>
